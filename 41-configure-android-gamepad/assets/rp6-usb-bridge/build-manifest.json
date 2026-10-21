@@ -1,0 +1,13 @@
+{
+  "author": "李逊",
+  "skill_version": "1.0.1",
+  "apk": "Android-Gamepad-Bridge.apk",
+  "bytes": 29146,
+  "sha256": "b67d968b91bca9827f088c9e328916b1da64b31193649dc27125b92d39e93767",
+  "package": "io.github.thomasfissh.androidgamepadbridge",
+  "version": "1.6.2-neutral",
+  "version_code": 9,
+  "minimum_android_api": 26,
+  "tested_hardware_baseline": "RP6 + verified USB receiver 2345:e053",
+  "renamed_build_validation": "compiled and statically checked; not physically retested"
+}

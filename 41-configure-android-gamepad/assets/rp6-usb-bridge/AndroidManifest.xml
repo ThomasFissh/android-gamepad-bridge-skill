@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="io.github.thomasfissh.androidgamepadbridge" android:versionCode="9" android:versionName="1.6.2-neutral">
+<uses-sdk android:minSdkVersion="26" android:targetSdkVersion="32"/>
+<uses-feature android:name="android.hardware.usb.host" android:required="true"/>
+
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+<uses-permission android:name="android.permission.VIBRATE"/>
+<application android:label="安卓手柄桥接" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false">
+<activity android:name=".MainActivity" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter><intent-filter><action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/></intent-filter><meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter"/></activity>
+<service android:name=".BridgeService" android:exported="false"/>
+</application></manifest>

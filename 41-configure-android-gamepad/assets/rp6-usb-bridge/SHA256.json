@@ -1,0 +1,14 @@
+{
+  "Android-Gamepad-Bridge.apk": "b67d968b91bca9827f088c9e328916b1da64b31193649dc27125b92d39e93767",
+  "AndroidManifest.xml": "bc48481068b946f568c2c0d432fd88a887bc9dd21c397a426ea445f25953310d",
+  "build-manifest.json": "c8bc39aaa5ff57b6627197ec1b2307e1425f5fd2f98598353d0a6e5ef395c1e9",
+  "build.py": "b53db473527aafa544b9eef79d512f8749332ff655063722292a1fd94ab501ce",
+  "res/values/strings.xml": "5b2be6d079b327c65d5ed6b39d18263ee3d06149bd936ad2b1ccd7773409b293",
+  "res/xml/device_filter.xml": "c2cfb4f1ca8964e2ff164d6f351dbf4299ca1a2ccd569b2b318194730fed2f17",
+  "src/io/github/thomasfissh/androidgamepadbridge/BridgeService.java": "6036bbec74609e1b1e496f655fdf054067804313bd5c5eebf5cbc819ee500545",
+  "src/io/github/thomasfissh/androidgamepadbridge/MainActivity.java": "dff203aab9e09b9ad9ffd18192ebdfa79683a078fb2ca8f0b509ac1f71bd5f47",
+  "src/io/github/thomasfissh/androidgamepadbridge/NativePad.java": "416df7776240939d875bbca368b4a8c97d4bf6d6d8ce714cc18227f0e0a05087",
+  "src/io/github/thomasfissh/androidgamepadbridge/OemInputGrant.java": "9721b7edf0bbae60db806b96cb6306402a6fb09f28812c4c4b7e21e07ac8b332",
+  "src/io/github/thomasfissh/androidgamepadbridge/VirtualPad.java": "bef7f4dcc23b778150a0c1257153be673f2c6f70a31c7c2875808963047853b7",
+  "start-gamepad-bridge.sh": "62cb813e77ec92214ab3193f2965622316d0944227984c089e37b61915703ee5"
+}

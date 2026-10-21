@@ -1,0 +1,13 @@
+.DS_Store
+**/build/
+__pycache__/
+*.pyc
+*.idsig
+dist/
+signing/
+*.jks
+*.keystore
+*.p12
+*password*
+local.properties
+*.log
