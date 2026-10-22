@@ -1,0 +1,1 @@
+<resources><style name="PixelTheme" parent="android:style/Theme.Material.NoActionBar"><item name="android:windowBackground">#0C1428</item><item name="android:colorAccent">#79E4C1</item><item name="android:statusBarColor">#0C1428</item><item name="android:navigationBarColor">#0C1428</item></style></resources>

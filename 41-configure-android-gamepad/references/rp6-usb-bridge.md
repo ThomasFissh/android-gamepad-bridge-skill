@@ -4,8 +4,8 @@
 
 ## 材料与复用边界
 
-- [参考源码与 APK](../assets/rp6-usb-bridge/)：源代码、资源、Manifest、当前通用名称 1.6.2 APK、可选启动脚本和 SHA256.json。未打包签名私钥、口令、ADB 密钥。
-- 当前包 `io.github.thomasfissh.androidgamepadbridge`，versionCode 9，versionName `1.6.2-neutral`；APK SHA256 `b67d968b91bca9827f088c9e328916b1da64b31193649dc27125b92d39e93767`。
+- [参考源码与 APK](../assets/rp6-usb-bridge/)：源代码、资源、Manifest、当前通用名称 1.7.0 像素界面 APK、可选启动脚本和 SHA256.json。未打包签名私钥、口令、ADB 密钥。
+- 当前公开包 `io.github.thomasfissh.androidgamepadbridge`，versionCode 10，versionName `1.7.0-pixel`；APK SHA256 `7a9adafc56500d6caef14ff70d5e9460f4f8ad9e6fb348a85e3adc91d238d41f`。本包源码/状态测试通过，尚未重新安装到实体设备验证。
 - 更新前备份使用者自己已安装的稳定版本和配置；本仓库不附历史试验版，不能为恢复直接卸载清数据。
 - 已安装的稳定版本优先保留。APK 是 RP6 指定 USB 接收器参考实现，不是任意 Android 通用兼容包；新机器至少完成普通权限最小验证，兼容路径需用户提供其 root 入口并重新适配。
 - [便携构建脚本](../assets/rp6-usb-bridge/build.py) 与源代码一同提供，使用方法见 [构建说明](build.md)。在副本中改动；升级原包需要相同签名，自己的新签名不能覆盖官方发布包。本仓库不包含签名私钥。
@@ -54,5 +54,9 @@
 
 - 普通 App：打开“安卓手柄桥接”，选择模式后点启动。兼容勾选标签“内置手柄兼容（Retroid 系统授权，死亡细胞）”；模式持久化。普通模式保留旧虚拟手柄配置。
 - 可选脚本 [start-gamepad-bridge.sh](../assets/rp6-usb-bridge/start-gamepad-bridge.sh)，设备原位置 `/sdcard/Download/start-gamepad-bridge.sh`；从厂商脚本入口实际执行通过。内容仅用 `am start --user 0 -f 0x10008000 -n io.github.thomasfissh.androidgamepadbridge/.MainActivity --ez gamepad_start true` 启动保存模式。当前 ROM 无清任务标记时热启动未触发自动开始；该标记重建 bridge Activity 任务，不 force-stop 运行服务。
-- 新版本重启后，用户不先开无线调试、不用 Shizuku，直接 App 点启动，再进《死亡细胞》测试方向、A/B、左摇杆和 Select+Start，确认成功。测试期间电脑未启动桥接或发送游戏输入。
+- 原功能基线 1.6.1 已完成以下重启验收：用户不先开无线调试、不用 Shizuku，直接 App 点启动，再进《死亡细胞》测试方向、A/B、左摇杆和 Select+Start，确认成功。测试期间电脑未启动桥接或发送游戏输入。
 - PS2 全局双手柄、RetroArch 快捷键、3DS 电视遮罩/L3 均获实体操作确认。Dolphin/DuckStation 只完成配置与 UI 回读；未验证全部游戏。兼容模式的游戏震动未单独验收，不能沿用普通模式的震动结论。
+
+## 实时测试界面
+
+显示层与跨机型复用见 [输入测试界面与移植](controller-ui.md)。桥接核心四类源码与上一公开版一致，新增显示层不意味着新的 USB 协议或 ROM 已适配。历史游戏/冷启动结果只属于原功能基线。

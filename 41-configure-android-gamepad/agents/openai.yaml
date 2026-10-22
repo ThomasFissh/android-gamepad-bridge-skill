@@ -1,4 +1,4 @@
 interface:
   display_name: "41 配置安卓手柄"
-  short_description: "配置无线手柄与模拟器全局映射，分普通桥接和内置手柄兼容两条路径"
+  short_description: "配置无线手柄、实时输入测试与模拟器映射，保留普通桥接和内置兼容两条路径"
   default_prompt: "使用 $41-configure-android-gamepad 配置这台安卓设备的无线手柄，保留掌机自带按键；需要内置兼容时由我提供 root 入口。"
